@@ -1,0 +1,29 @@
+# Ignore Visual Studio cache
+.vs/
+
+# Build folders
+/x64/
+/Debug/
+/Release/
+
+# Visual Studio files
+*.vcxproj.user
+*.suo
+*.ncb
+*.vcxproj.filters
+*.VC.db
+*.opendb
+
+# Backup files
+*.log
+*.tlog
+*.obj
+*.pdb
+*.exe
+*.dll
+*.idb
+
+# Auto-generated
+*.cache
+*.ipch
+*.tmp
