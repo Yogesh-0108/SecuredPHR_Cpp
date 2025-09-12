@@ -13,7 +13,7 @@ This project will let patients and doctors share health records or reports secur
 SecuredPHR_Cpp/
 ├── assets/ # Static resources (HTML/CSS/JS/images) (Yet to be added)
 ├── include/ # Headers (e.g., httplib.h)
-├── sqlite/ # SQLite headers/libs or db files (Yet to be added)
+├── sqlite/ # SQLite headers/libs or db files - sqlite3.c , sqlite3.h
 ├── src/ # C++ source as project grows (Yet to be added)
 ├── SecuredPHR_Cpp/ # VS project folder (contains SecuredPHR_Cpp.cpp, .vcxproj and main .cpp)
 ├── SecuredPHR_Cpp.sln
@@ -39,16 +39,15 @@ SecuredPHR_Cpp/
 3. Configuration: Debug | x64.
 4. Ensure "Properties" -> "C/C++ → Additional Include Directories" contains:
    - "$(ProjectDir)..\include"  (so "httplib.h" is found)
-   - later-> "$(ProjectDir)..\sqlite"  (for SQLite headers)
+   - "$(SolutionDir)\sqlite"  (for SQLite headers)
 5. Build: "Ctrl + Shift + b".
 6. Run: "Ctrl + F5" (or click "Local Windows Debugger").
 7. Visit: "http://localhost:8080/".
 
 ## Roadmap
-
-* Add SQLite integration (create/open DB, basic CRUD Operations)
 * Serve static assets from /assets
 * Add authentication for patients & doctors
+* Create database to store both patients' and doctors' data
 * AES Encryption for both doctors & patients.
 
 ## Contributions
